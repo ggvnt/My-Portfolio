@@ -30,7 +30,7 @@ export const Navbar = () => {
   transition-all duration-500 z-50 rounded-2xl
   ${isScrolled ? "glass-strong py-3 shadow-xl" : "glass py-4"}`}
     >
-      <nav className="container mx-auto px-4 md:px-0 flex items-center justify-between " >
+      <nav className="container mx-auto px-4 md:px-0 flex items-center justify-between ">
         <a
           href="#"
           style={{ fontFamily: "Priestacy" }}
@@ -55,7 +55,9 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact">
+            <Button size="sm">Contact Me</Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -80,9 +82,9 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <div onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
               <Button>Contact Me</Button>
-            </div>
+            </a>
           </div>
         </div>
       )}
