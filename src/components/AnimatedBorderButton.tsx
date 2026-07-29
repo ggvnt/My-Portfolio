@@ -1,6 +1,9 @@
-import { Download } from "lucide-react";
+// import { Download } from "lucide-react";
+import type { PropsWithChildren } from "react";
 
-export const AnimatedBorderButton = ({ children }) => {
+export const AnimatedBorderButton = ({
+  children,
+}: PropsWithChildren) => {
   return (
     <button
       className="relative bg-transparent border border-border 
