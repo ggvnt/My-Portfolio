@@ -147,7 +147,7 @@ export const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  name="user_message"
+                  name="message"
                   rows={6}
                   placeholder="Your Message"
                   required
