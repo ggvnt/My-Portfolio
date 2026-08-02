@@ -129,7 +129,19 @@ export const Contact = () => {
                   className="w-full rounded-md bg-[#3b4557] px-4 py-4 text-white placeholder:text-white/40 outline-none transition-colors focus:ring-2 focus:ring-primary/40"
                 />
               </div>
+              <div>
+                <label className="mb-2 block text-sm text-muted-foreground">
+                  Subject
+                </label>
 
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                  className="w-full rounded-md bg-[#3b4557] px-4 py-4 text-white placeholder:text-white/40 outline-none transition-colors focus:ring-2 focus:ring-primary/40"
+                />
+              </div>
               <div>
                 <label className="mb-2 block text-sm text-muted-foreground">
                   Message
